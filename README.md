@@ -8,10 +8,15 @@ Projet Needleman-Wunsch - L3 BISM 2023-2024
 ## Mon code
 
 import argparse
+
 #Partie 1: Importation des modules et analyse des arguments en ligne de commande
+
 parser = argparse.ArgumentParser()
+
 parser.add_argument("fichier1", help="Chemin vers le premier fichier")
+
 parser.add_argument("fichier2", help="Chemin vers le deuxième fichier")
+
 parser.add_argument("--gap", type=int, default=-10, help="Valeur du gap pour l'alignement")
 
 argument = parser.parse_args()
@@ -25,11 +30,15 @@ with open(argument.fichier2) as f2:
     seq2 = f2.read()
 
 #Partie 3: Affichage des séquences
+
 print(seq1)
+
 print(seq2)
 
 #Partie 4: Définition du dictionnaire de scores de substitution et de la pénalité de gap
-alignment_seq = {
+
+alignment_seq =
+{
     ('A', 'A'): 2, ('A', 'a'): 2, ('a', 'A'): 2, ('a', 'a'): 2,
     ('C', 'C'): 2, ('C', 'c'): 2, ('c', 'C'): 2, ('c', 'c'): 2,
     ('G', 'G'): 2, ('G', 'g'): 2, ('g', 'G'): 2, ('g', 'g'): 2,
@@ -95,11 +104,14 @@ def needleman_wunsch(seq1, seq2, alignment_seq, gap_penalty):
     
 
 #Partie 6: Appel de la fonction Needleman-Wunsch et affichage des résultats
+
 score, align1, align2 = needleman_wunsch(seq1, seq2, alignment_seq, gap_penalty)
 
 
 print("Score:", score)
+
 print("Alignement 1:", align1)
+
 print("Alignement 2:", align2)
 
 ## Résultat
@@ -196,12 +208,16 @@ gap_penalty = -1
 
 
 # Appel de la fonction needleman_wunsch avec les paramètres corrects
+
 score, align1, align2 = needleman_wunsch(seq1, seq2, alignment_seq, gap_penalty)
 
 
 # Affichage des résultats
+
 print("Score:", score)
+
 print("Alignement 1:", align1)
+
 print("Alignement 2:", align2)
 
 
