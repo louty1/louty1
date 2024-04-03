@@ -60,7 +60,9 @@ gap_penalty = argument.gap
 
 
 def needleman_wunsch(seq1, seq2, alignment_seq, gap_penalty):
+   
     m = len(seq1)
+   
     n = len(seq2)
 
     score_matrix = [[0 for _ in range(n + 1)] for _ in range(m + 1)]
@@ -149,7 +151,9 @@ Ce programme permet donc d'aligner efficacement deux séquences biologiques et d
 # Fonction de Needleman-Wunsch
 
 def needleman_wunsch(seq1, seq2, alignment_seq, gap_penalty):
+  
     m = len(seq1)
+   
     n = len(seq2)
 
     score_matrix = [[0 for _ in range(n + 1)] for _ in range(m + 1)]
