@@ -141,7 +141,7 @@ Le code présente un programme Python qui utilise l'algorithme de Needleman-Wuns
 
 6. Appel de la fonction `needleman_wunsch` avec les séquences, le dictionnaire de scores de substitution et la pénalité de gap, suivi de l'affichage du score d'alignement ainsi que des deux séquences alignées.
 
-Ce programme permet donc d'aligner efficacement deux séquences biologiques et d'afficher les résultats d'alignemente.
+Ce programme permet donc d'aligner efficacement deux séquences biologiques et d'afficher les résultats d'alignement.
 
 
 ## Exemple
