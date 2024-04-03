@@ -215,6 +215,8 @@ print("Alignement 1:", align1)
 print("Alignement 2:", align2)
 
 
+#Résultat
+
 Score: -1
 
 Alignement 1: ACGT
