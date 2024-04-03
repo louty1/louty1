@@ -196,6 +196,7 @@ def needleman_wunsch(seq1, seq2, alignment_seq, gap_penalty):
     return score, align1, align2
     
 seq1 = "ACGT"
+
 seq2 = "AGT"
 
 alignment_seq = {'A': {'A': 2, 'G': -1, 'C': -1, 'T': -1},
