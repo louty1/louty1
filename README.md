@@ -7,9 +7,9 @@ Projet Needleman-Wunsch - L3 BISM 2023-2024
 
 ## Mon code
 
-import argparse
+# Partie 1: Importation des modules et analyse des arguments en ligne de commande
 
-#Partie 1: Importation des modules et analyse des arguments en ligne de commande
+import argparse
 
 parser = argparse.ArgumentParser()
 
@@ -21,7 +21,7 @@ parser.add_argument("--gap", type=int, default=-10, help="Valeur du gap pour l'a
 
 argument = parser.parse_args()
 
-#Partie 2: Lecture des séquences à partir des fichiers
+# Partie 2: Lecture des séquences à partir des fichiers
 
 with open(argument.fichier1) as f1:
     seq1 = f1.read()
@@ -29,13 +29,13 @@ with open(argument.fichier1) as f1:
 with open(argument.fichier2) as f2:
     seq2 = f2.read()
 
-#Partie 3: Affichage des séquences
+# Partie 3: Affichage des séquences
 
 print(seq1)
 
 print(seq2)
 
-#Partie 4: Définition du dictionnaire de scores de substitution et de la pénalité de gap
+# Partie 4: Définition du dictionnaire de scores de substitution et de la pénalité de gap
 
 alignment_seq =
 {
@@ -56,7 +56,7 @@ alignment_seq =
 
 gap_penalty = argument.gap
 
-#Partie 5: Définition de la fonction Needleman-Wunsch
+# Partie 5: Définition de la fonction Needleman-Wunsch
 
 
 def needleman_wunsch(seq1, seq2, alignment_seq, gap_penalty):
@@ -148,7 +148,6 @@ Ce programme permet donc d'aligner efficacement deux séquences biologiques et d
 
 ## Exemple
 
-# Fonction de Needleman-Wunsch
 
 def needleman_wunsch(seq1, seq2, alignment_seq, gap_penalty):
   
@@ -215,7 +214,7 @@ print("Alignement 1:", align1)
 print("Alignement 2:", align2)
 
 
-#Résultat
+## Résultat
 
 Score: -1
 
